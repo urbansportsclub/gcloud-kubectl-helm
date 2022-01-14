@@ -3,8 +3,6 @@
 set -e
 set -x
 
-# add gkh user
-adduser -S gkh gkh
 
 # install apk packages
 apk update
@@ -34,6 +32,5 @@ chmod 755 /usr/local/bin/yq
 
 # set permissions
 mkdir -p /data
-chown gkh /data /entrypoint.sh /data/commands.sh
 chmod +x /entrypoint.sh /data/commands.sh
 

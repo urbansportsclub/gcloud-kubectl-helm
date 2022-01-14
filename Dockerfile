@@ -16,8 +16,6 @@ RUN chmod +x /tmp/install.sh /tmp/helm-init.sh && \
 
 VOLUME /data
 
-USER gkh
-
 RUN /tmp/helm-init.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
